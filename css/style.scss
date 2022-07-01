@@ -192,3 +192,34 @@ body {
   }
 }
 
+.services {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+
+  &__header {
+    color: $mainblack;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 200;
+    margin: 0;
+
+    span {
+      color: $maingreen;
+      font-weight: 600;
+    }
+  }
+
+  &__description {
+    display: block;
+    font-size: 16px;
+    width: 620px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  &__cards {
+    margin: 60px auto;
+    width: 1004px
+  }
+}
