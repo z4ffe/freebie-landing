@@ -9,7 +9,7 @@ $maingreen: #25A4AD;
 
 body {
   width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 .header {
@@ -221,5 +221,20 @@ body {
   &__cards {
     margin: 60px auto;
     width: 1004px
+  }
+
+  &__btn {
+    align-self: center;
+    background: none;
+    border: 1px solid $maingreen;
+    color: $maingreen;
+    font-size: 18px;
+    width: 215px;
+    height: 58px;
+
+    &:hover {
+      transform: scale(102%);
+      transition: 0.2s;
+    }
   }
 }

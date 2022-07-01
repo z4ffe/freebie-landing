@@ -5,7 +5,7 @@
 
 body {
   width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 .header {
@@ -187,6 +187,19 @@ body {
 .services__cards {
   margin: 60px auto;
   width: 1004px;
+}
+.services__btn {
+  align-self: center;
+  background: none;
+  border: 1px solid #25A4AD;
+  color: #25A4AD;
+  font-size: 18px;
+  width: 215px;
+  height: 58px;
+}
+.services__btn:hover {
+  transform: scale(102%);
+  transition: 0.2s;
 }
 
 /*# sourceMappingURL=style.css.map */
