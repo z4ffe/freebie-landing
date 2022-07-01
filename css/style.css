@@ -5,7 +5,7 @@
 
 body {
   width: 1440px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -533,6 +533,7 @@ body {
 }
 .footer .footer-content .footer-content__title h2 {
   padding-top: 150px;
+  margin: 0 auto;
   font-size: 65px;
   line-height: 76px;
   width: 767px;
@@ -540,6 +541,7 @@ body {
   text-align: center;
 }
 .footer .footer-content .footer-content__title .footer-content__button {
+  margin-top: 80px;
   font-size: 22px;
   color: #fff;
   width: 218px;
@@ -550,9 +552,64 @@ body {
   align-self: center;
 }
 .footer .footer-content .footer-content__title .footer-content__button:hover {
-  color: #D8D8D8;
+  color: #25A4AD;
   transition: 0.2s;
-  border-radius: 5px;
+  border: 1.5px solid #25A4AD;
+}
+.footer .footer-content .footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px auto;
+}
+.footer .footer-content .footer-links__logo h2 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+}
+.footer .footer-content .footer-links__logo p {
+  margin-top: 50px;
+  color: white;
+  width: 168px;
+  height: 30px;
+  font-size: 12px;
+}
+.footer .footer-content .footer-links__links {
+  margin-left: 160px;
+  margin-top: 10px;
+}
+.footer .footer-content .footer-links__links p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer .footer-content .footer-links__links ul {
+  list-style: none;
+  padding: 20px 0;
+  color: white;
+  font-size: 12px;
+}
+.footer .footer-content .footer-links__links ul li {
+  padding-top: 25px;
+}
+.footer .footer-content .footer-links__links ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+}
+.footer .footer-content .footer-links__links ul li a:hover {
+  color: #25A4AD;
+  transition: 0.2s;
+}
+.footer .footer-content .footer-year {
+  display: flex;
+}
+.footer .footer-content .footer-year p {
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 14px;
+  font-feature-settings: "liga" off;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

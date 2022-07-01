@@ -9,7 +9,7 @@ $maingreen: #25A4AD;
 
 body {
   width: 1440px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -626,6 +626,7 @@ body {
 
       h2 {
         padding-top: 150px;
+        margin: 0 auto;
         font-size: 65px;
         line-height: 76px;
         width: 767px;
@@ -634,6 +635,7 @@ body {
       }
 
       .footer-content__button {
+        margin-top: 80px;
         font-size: 22px;
         color: #fff;
         width: 218px;
@@ -644,11 +646,78 @@ body {
         align-self: center;
 
         &:hover {
-          color: #D8D8D8;
+          color: $maingreen;
           transition: 0.2s;
-          border-radius: 5px;
-
+          border: 1.5px solid $maingreen;
         }
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      margin: 150px auto;
+
+      &__logo {
+        h2 {
+          color: #fff;
+          font-size: 40px;
+          margin: 0;
+        }
+
+        p {
+          margin-top: 50px;
+          color: white;
+          width: 168px;
+          height: 30px;
+          font-size: 12px;
+        }
+      }
+
+      &__links {
+        margin-left: 160px;
+        margin-top: 10px;
+
+        p {
+          margin: 0;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        ul {
+          list-style: none;
+          padding: 20px 0;
+          color: white;
+          font-size: 12px;
+
+          li {
+            padding-top: 25px;
+
+            a {
+              text-decoration: none;
+              color: #fff;
+              transition: 0.2s;
+
+              &:hover {
+                color: $maingreen;
+                transition: 0.2s;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-year {
+      display: flex;
+
+      p {
+        margin: 0 auto;
+        font-size: 12px;
+        line-height: 14px;
+        font-feature-settings: 'liga' off;
+        color: #fff;
       }
     }
   }
