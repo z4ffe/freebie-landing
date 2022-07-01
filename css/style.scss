@@ -446,7 +446,7 @@ body {
       }
 
       ul {
-        list-style: url("/img/list.svg");
+        list-style: url("../img/list.svg");
         font-size: 16px;
         align-self: center;
 
@@ -494,7 +494,7 @@ body {
 
   .pricing-card:hover ul {
     color: $maingreen;
-    list-style: url("/img/list-green.svg");
+    list-style: url("../img/list-green.svg");
   }
 }
 

@@ -379,7 +379,7 @@ body {
   margin: 50px auto 0;
 }
 .pricing .pricing__cards .pricing-card ul {
-  list-style: url("/img/list.svg");
+  list-style: url("../img/list.svg");
   font-size: 16px;
   align-self: center;
 }
@@ -416,7 +416,7 @@ body {
 }
 .pricing .pricing-card:hover ul {
   color: #25A4AD;
-  list-style: url("/img/list-green.svg");
+  list-style: url("../img/list-green.svg");
 }
 
 .faqs {
