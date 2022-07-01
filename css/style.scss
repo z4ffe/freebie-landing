@@ -243,4 +243,71 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  background-color: rgba(248, 248, 248, 1);
+  min-height: 863px;
+
+  &__header {
+    margin-top: 80px;
+  }
+
+  &__description {
+    margin-top: 30px;
+  }
+
+  .features-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin: 0 70px;
+      border: 1px solid #D8D8D8;
+      width: 350px;
+      height: 342px;
+
+      h5 {
+        color: $mainblack;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      p {
+        color: $mainblack;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      a {
+        margin-top: 50px;
+        align-self: center;
+        color: $mainblack;
+
+
+      }
+
+      a:hover {
+        color: $maingreen;
+        transition: 0.1s;
+      }
+    }
+
+    .card:hover {
+      background: #fff;
+      box-shadow: 0 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0 20px 13px rgba(49, 49, 49, 0.05), 0 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+      border: none;
+      transition: 0.4s;
+    }
+
+    .card:hover h5 {
+      color: $maingreen;
+    }
+  }
+
+  .features__btn {
+    margin-top: 80px;
+  }
 }
