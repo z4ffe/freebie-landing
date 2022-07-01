@@ -657,6 +657,7 @@ body {
       display: flex;
       justify-content: space-between;
       margin: 150px auto;
+      z-index: 1;
 
       &__logo {
         h2 {

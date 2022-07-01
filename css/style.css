@@ -560,6 +560,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 150px auto;
+  z-index: 1;
 }
 .footer .footer-content .footer-links__logo h2 {
   color: #fff;
