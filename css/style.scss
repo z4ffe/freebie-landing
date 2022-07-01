@@ -520,7 +520,7 @@ body {
       display: flex;
 
       .plus-minus {
-        content: url("/img/plusicon.svg");
+        content: url("../img/plusicon.svg");
         width: 26px;
         height: 26px;
         margin: auto;
@@ -558,7 +558,7 @@ body {
   }
 
   .faq:active .plus-minus {
-    content: url("/img/minusicon.svg");
+    content: url("../img/minusicon.svg");
     transition: 0.5s;
   }
 }

@@ -440,7 +440,7 @@ body {
   display: flex;
 }
 .faqs .faq .faq-icon .plus-minus {
-  content: url("/img/plusicon.svg");
+  content: url("../img/plusicon.svg");
   width: 26px;
   height: 26px;
   margin: auto;
@@ -470,7 +470,7 @@ body {
   transition: 1s;
 }
 .faqs .faq:active .plus-minus {
-  content: url("/img/minusicon.svg");
+  content: url("../img/minusicon.svg");
   transition: 0.5s;
 }
 
