@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Gilroy, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 body {
@@ -82,6 +82,11 @@ body {
   transform: scale(105%);
   transition: 0.2s;
 }
+.header .nav .menu__btn .btn-signin:active {
+  color: #25A4AD;
+  transform: scale(95%);
+  transition: 0.2s;
+}
 .header .nav .menu__btn .btn-signup {
   font-size: 22px;
   color: #25A4AD;
@@ -92,9 +97,12 @@ body {
   transition: 0.2s;
 }
 .header .nav .menu__btn .btn-signup:hover {
-  color: #313131;
   transition: 0.2s;
-  border-radius: 5px;
+  transform: scale(103%);
+}
+.header .nav .menu__btn .btn-signup:active {
+  transition: 0.2s;
+  transform: scale(97%);
 }
 .header .content {
   display: flex;
@@ -142,6 +150,10 @@ body {
   transform: scale(102%);
   transition: 0.2s;
 }
+.header .content .content-btns .content-btns__get:active {
+  transform: scale(98%);
+  transition: 0.2s;
+}
 .header .content .content-btns .content-btns__explore {
   background: none;
   border: 1px solid #25A4AD;
@@ -153,6 +165,10 @@ body {
 }
 .header .content .content-btns .content-btns__explore:hover {
   transform: scale(102%);
+  transition: 0.2s;
+}
+.header .content .content-btns .content-btns__explore:active {
+  transform: scale(98%);
   transition: 0.2s;
 }
 .header .header_ad {
@@ -208,6 +224,10 @@ body {
 }
 .services__btn:hover {
   transform: scale(102%);
+  transition: 0.2s;
+}
+.services__btn:active {
+  transform: scale(98%);
   transition: 0.2s;
 }
 
@@ -400,6 +420,12 @@ body {
 .pricing .pricing__cards .pricing-btns__btn:hover {
   transform: scale(102%);
   transition: 0.2s;
+  background-color: #25A4AD;
+  color: #fff;
+}
+.pricing .pricing__cards .pricing-btns__btn:active {
+  transform: scale(98%);
+  transition: 0.2s;
 }
 .pricing .pricing__cards .pricing-btns__btn--margin {
   margin-top: 75px;
@@ -409,10 +435,6 @@ body {
   box-shadow: 0 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0 20px 13px rgba(49, 49, 49, 0.05), 0 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
   transform: translate(0, -60px);
   transition: 0.3s;
-}
-.pricing .pricing-card:hover .pricing-btns__btn {
-  background-color: #25A4AD;
-  color: #fff;
 }
 .pricing .pricing-card:hover ul {
   color: #25A4AD;
@@ -556,6 +578,12 @@ body {
   transition: 0.2s;
   border: 1.5px solid #25A4AD;
 }
+.footer .footer-content .footer-content__title .footer-content__button:active {
+  color: #25A4AD;
+  transition: 0.2s;
+  border: 1.5px solid #25A4AD;
+  transform: scale(98%);
+}
 .footer .footer-content .footer-links {
   display: flex;
   justify-content: space-between;
@@ -611,6 +639,142 @@ body {
   line-height: 14px;
   font-feature-settings: "liga" off;
   color: #fff;
+}
+
+.modal {
+  display: flex;
+  flex-flow: column nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  padding: 30px 0;
+  visibility: hidden;
+}
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  width: 500px;
+  min-height: 250px;
+  max-width: 100%;
+  transition: transform 0.15s ease 0.5s, opacity 0.15s ease 0.5s;
+  transform: scale(1);
+  overflow: visible;
+  opacity: 0;
+  border: 1px solid #25A4AD;
+  border-radius: 10px;
+  box-shadow: 0 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0 20px 13px rgba(49, 49, 49, 0.05), 0 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+}
+.modal-wrapper h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  background-color: #25A4AD;
+  width: 100%;
+  height: 120px;
+  border-bottom: 2px solid #313131;
+  margin: 0 0 15px 0;
+  padding-top: 45px;
+}
+.modal-wrapper p button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  padding: 0;
+  border-bottom: 2px solid #25A4AD;
+  transition: 0.2s;
+}
+.modal-wrapper p button:hover {
+  transform: scale(103%);
+  transition: 0.2s;
+}
+.modal-wrapper label {
+  margin-left: 150px;
+  margin-right: auto;
+  margin-bottom: 3px;
+}
+.modal-wrapper input {
+  width: 200px;
+  height: 25px;
+  border: 1px solid #25A4AD;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+.modal-wrapper .form-avatar {
+  height: 32px;
+  padding-top: 5px;
+}
+.modal-wrapper select {
+  width: 200px;
+  margin-left: 150px;
+  margin-right: auto;
+  border: 1px solid #25A4AD;
+  border-radius: 5px;
+  height: 25px;
+}
+.modal-wrapper .form-buttons {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.modal-wrapper .form-buttons .modal__signup {
+  display: inline-block;
+  margin-top: 20px;
+  background: transparent;
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+  border: 1px solid #25A4AD;
+  color: #25A4AD;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.modal-wrapper .form-buttons .modal__signup:hover {
+  transform: scale(102%);
+  transition: 0.2s;
+}
+.modal-wrapper .form-buttons .modal__signup:active {
+  transform: scale(98%);
+  transition: 0.2s;
+}
+.modal-wrapper .form-buttons .modal__signup:last-child {
+  margin-left: 5px;
+  border-color: #7e2b2b;
+  color: #7e2b2b;
+}
+.modal-wrapper .form-buttons .modal__exit {
+  position: absolute;
+  border: none;
+  background-image: url("../img/cross.svg");
+  background-color: transparent;
+  content: "";
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  top: 15px;
+}
+.modal-wrapper .form-buttons .modal__exit:hover {
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.modal--active {
+  visibility: visible;
+}
+
+.modal-wrapper--active {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.15s ease 0.5s, opacity 0.15s ease 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@ $maingreen: #25A4AD;
 
 * {
   box-sizing: border-box;
-  font-family: Gilroy, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 body {
@@ -93,6 +93,11 @@ body {
           transform: scale(105%);
           transition: 0.2s;
         }
+        &:active {
+          color: $maingreen;
+          transform: scale(95%);
+          transition: 0.2s;
+        }
       }
 
       .btn-signup {
@@ -105,9 +110,13 @@ body {
         transition: 0.2s;
 
         &:hover {
-          color: $mainblack;
           transition: 0.2s;
-          border-radius: 5px;
+          transform: scale(103%);
+        }
+
+        &:active {
+          transition: 0.2s;
+          transform: scale(97%);
         }
       }
     }
@@ -164,6 +173,10 @@ body {
           transform: scale(102%);
           transition: 0.2s;
         }
+        &:active {
+          transform: scale(98%);
+          transition: 0.2s;
+        }
       }
 
       .content-btns__explore {
@@ -177,6 +190,11 @@ body {
 
         &:hover {
           transform: scale(102%);
+          transition: 0.2s;
+        }
+
+        &:active {
+          transform: scale(98%);
           transition: 0.2s;
         }
       }
@@ -243,6 +261,10 @@ body {
 
     &:hover {
       transform: scale(102%);
+      transition: 0.2s;
+    }
+    &:active {
+      transform: scale(98%);
       transition: 0.2s;
     }
   }
@@ -471,6 +493,12 @@ body {
       &:hover {
         transform: scale(102%);
         transition: 0.2s;
+        background-color: $maingreen;
+        color: #fff;
+      }
+      &:active {
+        transform: scale(98%);
+        transition: 0.2s;
       }
 
     }
@@ -487,10 +515,6 @@ body {
     transition: 0.3s;
   }
 
-  .pricing-card:hover .pricing-btns__btn {
-    background-color: $maingreen;
-    color: #fff;
-  }
 
   .pricing-card:hover ul {
     color: $maingreen;
@@ -650,6 +674,12 @@ body {
           transition: 0.2s;
           border: 1.5px solid $maingreen;
         }
+        &:active {
+          color: $maingreen;
+          transition: 0.2s;
+          border: 1.5px solid $maingreen;
+          transform: scale(98%);
+        }
       }
     }
 
@@ -722,4 +752,159 @@ body {
       }
     }
   }
+}
+
+.modal {
+  display: flex;
+  flex-flow: column nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  padding: 30px 0;
+  visibility: hidden;
+
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, .95);
+    width: 500px;
+    min-height: 250px;
+    max-width: 100%;
+    transition: transform 0.15s ease 0.5s, opacity 0.15s ease 0.5s;
+    transform: scale(1);
+    overflow: visible;
+    opacity: 0;
+    border: 1px solid $maingreen;
+    border-radius: 10px;
+    box-shadow: 0 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0 20px 13px rgba(49, 49, 49, 0.05), 0 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 400;
+      background-color: $maingreen;
+      width: 100%;
+      height: 120px;
+      border-bottom: 2px solid $mainblack;
+      margin: 0 0 15px 0;
+      padding-top: 45px;
+    }
+
+    p {
+      button {
+        border: none;
+        background: transparent;
+        font-size: 16px;
+        padding: 0;
+        border-bottom: 2px solid $maingreen;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(103%);
+          transition: 0.2s;
+        }
+      }
+    }
+
+    label {
+      margin-left: 150px;
+      margin-right: auto;
+      margin-bottom: 3px;
+    }
+
+    input {
+      width: 200px;
+      height: 25px;
+      border: 1px solid $maingreen;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      padding-left: 5px;
+    }
+
+    .form-avatar {
+      height: 32px;
+      padding-top: 5px;
+    }
+
+    select {
+      width: 200px;
+      margin-left: 150px;
+      margin-right: auto;
+      border: 1px solid $maingreen;
+      border-radius: 5px;
+      height: 25px;
+    }
+
+    .form-buttons {
+      display: flex;
+      border-bottom: 1px solid black;
+
+
+      .modal__signup {
+        display: inline-block;
+        margin-top: 20px;
+        background: transparent;
+        width: 100px;
+        height: 35px;
+        font-size: 20px;
+        border: 1px solid $maingreen;
+        color: $maingreen;
+        margin-right: 5px;
+        margin-bottom: 10px;
+
+        &:hover {
+          transform: scale(102%);
+          transition: 0.2s;
+        }
+
+        &:active {
+          transform: scale(98%);
+          transition: 0.2s;
+        }
+
+        &:last-child {
+          margin-left: 5px;
+          border-color: #7e2b2b;
+          color: #7e2b2b;
+        }
+      }
+
+      .modal__exit {
+        position: absolute;
+        border: none;
+        background-image: url("../img/cross.svg");
+        background-color: transparent;
+        content: '';
+        width: 30px;
+        height: 30px;
+        right: 15px;
+        top: 15px;
+
+        &:hover {
+          border: 2px solid black;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+
+.modal--active {
+  visibility: visible;
+}
+
+.modal-wrapper--active {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.15s ease 0.5s, opacity 0.15s ease 0.5s;
 }
